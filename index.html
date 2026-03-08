@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIfolio - CLI Terminal Style Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="vignette"></div>
+
+    <nav class="navbar">
+        <div class="nav-prompt">
+            <span class="prompt-arrow">&gt;.</span>
+            <a href="index.html" class="prompt-path"
+                style="color: inherit; text-decoration: none;">shahriar@portfolio:~$</a>
+            <span class="blinking-cursor"></span>
+        </div>
+        <div class="desktop-nav" style="display:flex; gap: 1.5rem; align-items: center;">
+            <a href="about.html" class="nav-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="nav-icon">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                About
+            </a>
+            <a href="projects.html" class="nav-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="nav-icon">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Projects
+            </a>
+            <a href="experience.html" class="nav-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="nav-icon">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Experience
+            </a>
+            <a href="blog.html" class="nav-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="nav-icon">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                Blog
+            </a>
+            <a href="contact.html" class="nav-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="nav-icon">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Contact
+            </a>
+        </div>
+        <div class="availability-status">
+            <span class="status-dot"></span> Available
+        </div>
+    </nav>
+
+    <main class="terminal-container">
+
+        <header class="hero-section">
+            <div class="hero-box">
+                <pre class="hero-name-ascii">
+ ██████  ██     ██    ███    ██     ██ ████████  ████    ███    ████████  
+██    ██ ██     ██   ██ ██   ██     ██ ██     ██  ██    ██ ██   ██     ██ 
+██       ██     ██  ██   ██  ██     ██ ██     ██  ██   ██   ██  ██     ██ 
+ ██████  █████████ ██     ██ █████████ ████████   ██  ██     ██ ████████  
+      ██ ██     ██ █████████ ██     ██ ██   ██    ██  █████████ ██   ██   
+██    ██ ██     ██ ██     ██ ██     ██ ██    ██   ██  ██     ██ ██    ██  
+ ██████  ██     ██ ██     ██ ██     ██ ██     ██ ████ ██     ██ ██     ██ 
+
+██     ██  ███████   ██████   ██████     ███    ████ ██    ██ 
+██     ██ ██     ██ ██    ██ ██    ██   ██ ██    ██  ███   ██ 
+██     ██ ██     ██ ██       ██        ██   ██   ██  ████  ██ 
+█████████ ██     ██  ██████   ██████  ██     ██  ██  ██ ██ ██ 
+██     ██ ██     ██       ██       ██ █████████  ██  ██  ████ 
+██     ██ ██     ██ ██    ██ ██    ██ ██     ██  ██  ██   ███ 
+██     ██  ███████   ██████   ██████  ██     ██ ████ ██    ██ 
+                </pre>
+                <div class="hero-subtitle">Senior Web3 Developer's Portfolio</div>
+            </div>
+        </header>
+
+        <section class="portfolio-info-section">
+            <div class="info-text">
+                <h2 class="cyan-text">Portfolio Information:</h2>
+                <ul class="info-list">
+                    <li><span class="info-label">Name:</span> <span class="info-value">Shahriar Hossain</span></li>
+                    <li><span class="info-label">Based in:</span> <span class="info-value">Dhaka, Bangladesh</span></li>
+                    <li><span class="info-label">Profession:</span> <span class="info-value">Full-Stack & Web3
+                            Developer</span></li>
+                    <li><span class="info-label">Availability:</span> <span class="info-value">Available for
+                            Collaboration</span></li>
+                </ul>
+            </div>
+
+            <div class="info-portrait">
+                <img src="profile-cli.png" alt="Shahriar Hossain"
+                    style="width: 250px; height: 260px; object-fit: cover; border-radius: 4px; box-shadow: 0 0 15px rgba(20,255,0,0.3); border: 1px dashed rgba(20,255,0,0.3);"
+                    onerror="this.onerror=null; this.src='profile-cli-2.png';">
+            </div>
+        </section>
+
+        <section class="marquee-section">
+            <div class="marquee-content">
+                Welcome to Shahriar Hossain's Developer Portfolio! &nbsp;&nbsp;&nbsp;&nbsp; /// &nbsp;&nbsp;&nbsp;&nbsp;
+                Open for Web3 and Machine Learning opportunities &nbsp;&nbsp;&nbsp;&nbsp; /// &nbsp;&nbsp;&nbsp;&nbsp;
+                Welcome to Shahriar Hossain's Developer Portfolio!
+            </div>
+        </section>
+
+        <!-- Homepage Projects Section -->
+        <section class="home-projects" style="margin-top: 4rem;">
+            <p
+                style="color:var(--primary-color); font-size:1.1rem; margin-bottom:2rem; text-shadow: var(--glow-spread-primary);">
+                shahriar@portfolio:~$ <span style="color:var(--text-color); text-shadow:none;">ls -l ./projects</span>
+            </p>
+
+            <div class="projects-list" style="display:flex; flex-direction:column; gap:2rem;">
+                <!-- Project 1 -->
+                <article class="card" style="padding: 1.5rem; margin-bottom: 0;">
+                    <h3 class="cyan-text" style="font-size: 1.5rem; margin-bottom: 0.5rem;">nano-vLLM Architectural Lab
+                    </h3>
+                    <p class="category-tags" style="margin-bottom: 1rem; font-size: 0.75rem;"><span class="tag">Machine
+                            Learning</span> <span class="tag">Systems</span></p>
+                    <p class="description" style="font-size: 0.95rem; margin-bottom: 1rem;">Step-by-step architectural
+                        deep-dive into vLLM internals — GPU underutilization, memory fragmentation, and throughput
+                        bottlenecks.</p>
+                    <a href="projects.html" class="btn read-more-btn"
+                        style="padding: 0.5rem 1rem; font-size: 0.85rem;">[ View Details ]</a>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="card" style="padding: 1.5rem; margin-bottom: 0;">
+                    <h3 class="cyan-text" style="font-size: 1.5rem; margin-bottom: 0.5rem;">eKYC Platform</h3>
+                    <p class="category-tags" style="margin-bottom: 1rem; font-size: 0.75rem;"><span
+                            class="tag">Full-Stack</span> <span class="tag">Computer CV</span></p>
+                    <p class="description" style="font-size: 0.95rem; margin-bottom: 1rem;">Electronic Know Your
+                        Customer platform with identity verification workflows — document and face verification.</p>
+                    <a href="projects.html" class="btn read-more-btn"
+                        style="padding: 0.5rem 1rem; font-size: 0.85rem;">[ View Details ]</a>
+                </article>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="projects.html" class="btn primary-btn">[ View All Projects ]</a>
+            </div>
+        </section>
+
+        <!-- Homepage Experience Section -->
+        <section class="home-experience" style="margin-top: 5rem;">
+            <p
+                style="color:var(--primary-color); font-size:1.1rem; margin-bottom:2rem; text-shadow: var(--glow-spread-primary);">
+                shahriar@portfolio:~$ <span style="color:var(--text-color); text-shadow:none;">cat experience.txt</span>
+            </p>
+
+            <div class="experience-list"
+                style="margin-left: 1rem; border-left: 2px solid rgba(20,255,0,0.3); padding-left: 2rem;">
+                <div style="margin-bottom: 2rem; position: relative;">
+                    <span style="position: absolute; left: -2.4rem; top: 0; color: var(--primary-color);">></span>
+                    <h3 class="cyan-text" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Full-Stack Engineer</h3>
+                    <div style="font-size: 0.85rem; color: var(--text-color); opacity: 0.8;">Mudraa • Jan 2026 – Present
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 2rem; position: relative;">
+                    <span style="position: absolute; left: -2.4rem; top: 0; color: var(--primary-color);">></span>
+                    <h3 class="cyan-text" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Software Engineer Intern
+                    </h3>
+                    <div style="font-size: 0.85rem; color: var(--text-color); opacity: 0.8;">Poridhi.io • May – Dec 2025
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="experience.html" class="btn primary-btn">[ View Full Experience ]</a>
+            </div>
+        </section>
+
+        <!-- Homepage Blog / Pubs Section -->
+        <section class="home-blog" style="margin-top: 5rem; margin-bottom: 5rem;">
+            <p
+                style="color:var(--primary-color); font-size:1.1rem; margin-bottom:2rem; text-shadow: var(--glow-spread-primary);">
+                shahriar@portfolio:~$ <span style="color:var(--text-color); text-shadow:none;">cd publications &&
+                    ls</span>
+            </p>
+
+            <div class="blog-list" style="display:flex; flex-direction:column; gap:1.5rem;">
+                <article class="blog-card" style="padding: 1.5rem;">
+                    <div class="blog-meta" style="margin-bottom: 0.5rem;">
+                        <span class="blog-category">Publication</span>
+                        <span class="blog-read-time">Jul 2025</span>
+                    </div>
+                    <h3 class="blog-title" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Mind_Matrix at CQs-Gen</h3>
+                    <p class="blog-excerpt" style="font-size: 0.9rem; margin-bottom: 1rem;">Built an LLM pipeline to
+                        generate critical questions challenging logical fallacies. Ranked 7th internationally at
+                        ArgMining, ACL.</p>
+                    <a href="blog.html" class="btn read-more-btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">[
+                        Read More ]</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-divider"></div>
+        <div class="footer-content">
+            <div class="copyright">© Shahriar Hossain | 2025</div>
+            <div class="version">v20.07.2025</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

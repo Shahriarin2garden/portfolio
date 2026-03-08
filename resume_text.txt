@@ -1,0 +1,95 @@
+Shahriar Hossain 
+Software Engineer  ·  Machine Learning & Full-Stack Development  ·  Competitive Programmer 
+Shahriarhossainsami499@gmail.com   |   +880 1521-743550   |   Dhaka, Bangladesh   |   GitHub   |   LinkedIn 
+SUMMARY 
+Computer Science student at CUET with hands-on professional experience as a Full-Stack Developer and a growing focus on Machine Learning. 
+Strong competitive programming background (500+ problems across Codeforces, LeetCode, and others) with solid knowledge of algorithms, 
+data structures, OOP, and MVC patterns. Experienced in Python, C++, and JavaScript. Published NLP researcher at ACL 2025 (7th place, CQs-
+Gen shared task) and IEEE ICCIT 2025. Eager to contribute to an innovative ML team and grow within a product-driven, collaborative 
+environment. 
+PROFESSIONAL EXPERIENCE 
+Full-Stack Engineer 
+Jan 2026 – Present 
+Mudraa  ·  Dhaka, Remote 
+– Designed and implemented end-to-end web features for a financial product comparison platform, building scalable frontend interfaces 
+and backend APIs using React, Node.js, and Firestore. 
+– Integrated dynamic investment data pipelines and collaborated with product and design teams to deliver production-ready full-stack 
+solutions; applied Python-based scripting for data processing tasks. 
+Software Engineer Intern 
+May – Dec 2025 
+Poridhi.io  ·  Remote 
+– Designed scalable RESTful APIs with Node.js and implemented secure OAuth2 / OpenID Connect authentication; worked with DevOps 
+team on Docker and GitHub Actions CI/CD pipelines. 
+– Applied ML-adjacent concepts including API integration for AI services; collaborated asynchronously across distributed teams with 
+structured written documentation. 
+Frontend Developer 
+Nov 2024 – Mar 2025 
+The Tork  ·  On-Site 
+– Developed modular, responsive UI components with React.js, Vue.js, and Next.js for a high-traffic marketplace; sprint and code review 
+management via Jira and Bitbucket. 
+EDUCATION 
+B.Eng. Computer Science & Engineering 
+Mar 2022 – Present 
+Chittagong University of Engineering & Technology (CUET) 
+Relevant Coursework: Software Engineering, Data Structures & Algorithms, Machine Learning, Artificial Intelligence, Information Security, Object-
+Oriented Programming 
+TECHNICAL SKILLS 
+Languages: Python, C++, JavaScript (ES6+), TypeScript, Java, SQL 
+ML & AI: Machine Learning fundamentals, NLP (LSTM, DistilBERT, LLMs), Computer Vision concepts, RAG systems, LLM API integration 
+(Anthropic, OpenAI, OpenRouter, Gemini), OCR, TTS 
+Algorithms & DS: 500+ competitive programming problems — Codeforces, LeetCode, UVA, LightOJ, CodeChef; strong in graphs, DP, trees, 
+sorting 
+OOP & Frameworks: OOP principles, MVC pattern, React.js, Next.js, Vue.js, Node.js, Express, FastAPI 
+DevOps & Tools: Git, Docker, GitHub Actions, CI/CD, Jira, Bitbucket, ESLint, Firebase, AWS (S3, Lambda, SageMaker) 
+Databases: Firestore, PostgreSQL, REST API design, OAuth2, OIDC, JWT 
+ 
+ 
+PROJECTS 
+nano-vLLM Architectural Lab  [GitHub] 
+Feb 2026 
+– Step-by-step architectural deep-dive into vLLM internals — GPU underutilization (60–70% idle), memory fragmentation (30–50% waste), 
+and throughput bottlenecks with enhanced visualizations. 
+– Hands-on exploration of LLM inference optimization techniques; directly relevant to ML engineering and production model serving. 
+Recommender System  [GitHub] 
+Dec 2025 
+– Python-based recommendation engine implementing collaborative filtering and content-based techniques; demonstrates applied ML 
+pipeline design, data processing, and model evaluation. 
+eKYC Platform  [GitHub] 
+Nov 2025 
+– Electronic Know Your Customer (eKYC) platform with identity verification workflows — integrates computer vision concepts for 
+document and face verification; full-stack JavaScript with REST API backend. 
+FastAPI Connection Pool MVP  [GitHub] 
+Dec 2025 
+– High-performance Python FastAPI backend with optimized PostgreSQL connection pooling — 100% success rate under 100+ concurrent 
+requests; clean architecture, OOP design, MIT licensed. 
+Kong + Authentik OIDC API Gateway  [GitHub] 
+May 2025 
+– End-to-end API security setup with Kong API Gateway and Authentik as OIDC identity provider — automated authentication, access 
+control, and route protection for microservices. 
+RESEARCH & PUBLICATIONS 
+Mind_Matrix at CQs-Gen 2025: Adaptive Generation of Critical Questions for Argumentative Interventions 
+Jul 2025 
+12th Argument Mining Workshop (ArgMining 2025), ACL Anthology 
+Built an LLM pipeline (quantized model + semantic similarity + meta-evaluation loop) to generate critical questions challenging logical fallacies 
+and implicit assumptions in argumentative text. Ranked 7th internationally. 
+Mental Health Detection from Journaling Data Using LSTM and DistilBERT-Based Lightweight NLP Models 
+Dec 2025 
+IEEE ICCIT 2025 — International Conference on Computer and Information Technology 
+Proposed a hybrid NLP framework (LSTM + DistilBERT) for mental health risk detection from journal-style text. Integrated SHAP and LIME 
+explainability tools to build transparent, trustworthy AI for healthcare. 
+CERTIFICATIONS & TRAINING 
+Front-End Development (React / Node.js / Vue.js / Angular.js) 
+Apr 2025 
+Bangladesh Computer Council 
+Industrial Attachment — SELISE Bangladesh Ltd.  (Ref: SELISEBD/CUET/25733) 
+Nov 2025 
+Mentored by senior software development professionals, Dhaka 
+AWARDS & ACHIEVEMENTS 
+7th Place — ACL 2025 CQs-Gen Shared Task  ·  ArgMining Workshop, Vienna, Austria — Team Mind_Matrix, first-ever shared task 
+participation. 
+Ranked 21st — NAACL 2025 NLP Shared Task  ·  Top 25 worldwide in competitive NLP research. 
+Competitive Programming  ·  500+ problems solved — Codeforces, LeetCode, UVA, LightOJ, CodeChef — strong algorithmic problem-solving 
+background. 
+FIELD OF INTEREST 
+Machine Learning, Artificial Intelligence, Computer Vision, Natural Language Processing, LLM Inferencing, RAG Systems, Watermarking for 
+LLMs, OCR Systems, TTS Systems, Algorithmic Problem Solving. 

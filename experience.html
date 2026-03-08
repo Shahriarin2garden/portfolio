@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - CLIfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .timeline-item {
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-shadow: var(--glow-spread-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="vignette"></div>
+
+    <nav class="navbar">
+        <div class="nav-prompt">
+            <span class="prompt-arrow">&gt;.</span>
+            <a href="index.html" class="prompt-path"
+                style="color: inherit; text-decoration: none;">shahriar@portfolio:~$</a>
+            <span class="prompt-command" style="margin-left:8px;">experience</span>
+            <span class="blinking-cursor"></span>
+        </div>
+        <div class="desktop-nav" style="display:flex; gap: 1.5rem;">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="experience.html" class="nav-link cyan-text">Experience</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main class="terminal-container">
+
+        <div class="experience-list">
+
+            <div class="timeline-item">
+                <h3 class="cyan-text" style="font-size: 1.5rem; margin-bottom: 0.2rem;">Full-Stack Engineer</h3>
+                <div style="font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-bottom: 1rem;">
+                    <span>Mudraa • Dhaka, Remote</span> | <span>Jan 2026 – Present</span>
+                </div>
+                <ul style="list-style-type: none; padding:0;">
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Designed and
+                        implemented end-to-end web features for a financial product comparison platform building
+                        scalable frontend interfaces and backend APIs using React, Node.js, and Firestore.</li>
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Integrated dynamic
+                        investment data pipelines and collaborated with product and design teams to deliver
+                        production-ready full-stack solutions.</li>
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Applied Python-based
+                        scripting for data processing tasks.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3 class="cyan-text" style="font-size: 1.5rem; margin-bottom: 0.2rem;">Software Engineer Intern</h3>
+                <div style="font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-bottom: 1rem;">
+                    <span>Poridhi.io • Remote</span> | <span>May – Dec 2025</span>
+                </div>
+                <ul style="list-style-type: none; padding:0;">
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Designed scalable
+                        RESTful APIs with Node.js and implemented secure OAuth2 / OpenID Connect authentication.</li>
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Worked with DevOps
+                        team on Docker and GitHub Actions CI/CD pipelines.</li>
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Applied ML-adjacent
+                        concepts including API integration for AI services.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3 class="cyan-text" style="font-size: 1.5rem; margin-bottom: 0.2rem;">Frontend Developer</h3>
+                <div style="font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-bottom: 1rem;">
+                    <span>The Tork • On-Site</span> | <span>Nov 2024 – Mar 2025</span>
+                </div>
+                <ul style="list-style-type: none; padding:0;">
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Developed modular,
+                        responsive UI components with React.js, Vue.js, and Next.js for a high-traffic marketplace.</li>
+                    <li style="margin-bottom: 0.5rem; position:relative; padding-left: 1.5rem;"><span
+                            style="position:absolute; left:0; color:var(--primary-color);">•</span> Sprint and code
+                        review management via Jira and Bitbucket.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 5rem; border-top: 1px dashed rgba(20,255,0,0.3); padding-top: 3rem;">
+            <p
+                style="color:var(--primary-color); font-size:1.1rem; margin-bottom:2rem; text-shadow: var(--glow-spread-primary);">
+                shahriar@portfolio:~$ <span style="color:var(--text-color); text-shadow:none;">achievements</span></p>
+            <p style="margin-bottom: 3rem;">Key milestones in research and algorithmic problem solving.</p>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <h4 style="font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem;">7th Place — ACL 2025
+                    CQs-Gen Shared Task</h4>
+                <p style="font-style:italic; margin-bottom: 1.5rem; font-size:1.05rem;">ArgMining Workshop, Vienna,
+                    Austria — Team Mind_Matrix, first-ever shared task participation. Built an LLM pipeline to generate
+                    critical questions challenging logical fallacies.</p>
+            </div>
+
+            <div class="card">
+                <h4 style="font-size: 1.2rem; color: var(--accent-color); margin-bottom: 0.5rem;">Ranked 21st — NAACL
+                    2025 NLP Shared Task</h4>
+                <p style="font-style:italic; margin-bottom: 1.5rem; font-size:1.05rem;">Placed in the top 25 worldwide
+                    in competitive NLP research modeling and evaluation.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-divider"></div>
+        <div class="footer-content">
+            <div class="copyright">© Shahriar Hossain | 2025</div>
+            <div class="version">v20.07.2025</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

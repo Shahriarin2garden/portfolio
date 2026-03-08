@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CLIfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-command {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            text-shadow: var(--glow-spread-primary);
+        }
+
+        .contact-link {
+            color: var(--text-color);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: rgba(209, 209, 209, 0.3);
+            transition: all 0.2s;
+        }
+
+        .contact-link:hover {
+            color: var(--primary-color);
+            text-decoration-color: var(--primary-color);
+            text-shadow: var(--glow-spread-primary);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 4rem;
+            border-top: 1px dashed rgba(20, 255, 0, 0.3);
+            padding-top: 3rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            color: var(--primary-color);
+            text-shadow: 0 0 2px var(--primary-color);
+        }
+
+        input,
+        textarea {
+            background: rgba(5, 5, 5, 0.6);
+            border: 1px solid rgba(20, 255, 0, 0.3);
+            padding: 1rem;
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--primary-color);
+            box-shadow: inset 0 0 10px rgba(20, 255, 0, 0.1), 0 0 10px rgba(20, 255, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="vignette"></div>
+
+    <nav class="navbar">
+        <div class="nav-prompt">
+            <span class="prompt-arrow">&gt;.</span>
+            <a href="index.html" class="prompt-path"
+                style="color: inherit; text-decoration: none;">shahriar@portfolio:~$</a>
+            <span class="prompt-command" style="margin-left:8px;">contact</span>
+            <span class="blinking-cursor"></span>
+        </div>
+        <div class="desktop-nav" style="display:flex; gap: 1.5rem;">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link cyan-text">Contact</a>
+        </div>
+    </nav>
+
+    <main class="terminal-container">
+
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+            Looking to collaborate on exciting ML models or seeking a dedicated full-stack engineer? I bring a builder's
+            mindset to both research and production systems. Reach out through any of the channels below!
+        </p>
+
+        <div class="contact-command">$ email</div>
+        <a href="mailto:Shahriarhossainsami499@gmail.com" class="contact-link">Shahriarhossainsami499@gmail.com</a>
+
+        <div class="contact-command">$ phone</div>
+        <a href="tel:+8801521743550" class="contact-link">+880 1521-743550</a>
+
+        <div class="contact-command">$ github</div>
+        <a href="https://github.com/Shahriarhossainsami499" class="contact-link"
+            target="_blank">github.com/Shahriarhossainsami499</a>
+
+        <div class="contact-command">$ linkedin</div>
+        <a href="https://linkedin.com/in/shahriarhossain" class="contact-link"
+            target="_blank">linkedin.com/in/shahriarhossain</a>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn" style="align-self: flex-start; margin-top: 1rem;">[ Submit
+                ]</button>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-divider"></div>
+        <div class="footer-content">
+            <div class="copyright">© Shahriar Hossain | 2025</div>
+            <div class="version">v20.07.2025</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

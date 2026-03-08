@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CLIfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="vignette"></div>
+
+    <nav class="navbar">
+        <div class="nav-prompt">
+            <span class="prompt-arrow">&gt;.</span>
+            <a href="index.html" class="prompt-path"
+                style="color: inherit; text-decoration: none;">shahriar@portfolio:~$</a>
+            <span class="prompt-command" style="margin-left:8px;">blog</span>
+            <span class="blinking-cursor"></span>
+        </div>
+        <div class="desktop-nav" style="display:flex; gap: 1.5rem;">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="blog.html" class="nav-link cyan-text">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main class="terminal-container">
+        <div class="blog-list">
+            <article class="blog-card">
+                <div class="blog-meta">
+                    <span class="blog-category">Publication</span>
+                    <span class="blog-read-time">Jul 2025</span>
+                </div>
+                <h3 class="blog-title">Mind_Matrix at CQs-Gen 2025: Adaptive Generation of Critical Questions</h3>
+                <p class="blog-excerpt">Built an LLM pipeline to generate critical questions challenging logical
+                    fallacies in argumentative text. Ranked 7th internationally at ArgMining Workshop, ACL Anthology.
+                </p>
+                <a href="#" class="btn read-more-btn">[ Read paper ]</a>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-meta">
+                    <span class="blog-category">Publication</span>
+                    <span class="blog-read-time">Dec 2025</span>
+                </div>
+                <h3 class="blog-title">Mental Health Detection from Journaling Data</h3>
+                <p class="blog-excerpt">Proposed a hybrid NLP framework (LSTM + DistilBERT) for mental health risk
+                    detection from journal-style text. Presented at IEEE ICCIT 2025.</p>
+                <a href="#" class="btn read-more-btn">[ Read paper ]</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-divider"></div>
+        <div class="footer-content">
+            <div class="copyright">© Shahriar Hossain | 2025</div>
+            <div class="version">v20.07.2025</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
