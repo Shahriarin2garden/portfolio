@@ -536,20 +536,44 @@ body {
     flex-shrink: 0;
 }
 
-.cli-filtered-img {
+.profile-container {
+    position: relative;
     width: 250px;
     height: 260px;
-    object-fit: cover;
-    border-radius: 4px;
-    box-shadow: 0 0 15px rgba(20, 255, 0, 0.3);
-    border: 1px dashed rgba(20, 255, 0, 0.3);
-    filter: grayscale(100%) sepia(100%) hue-rotate(65deg) saturate(500%) brightness(0.8) contrast(1.5);
-    transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cli-filtered-img:hover {
-    filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%) brightness(1) contrast(1);
+.profile-color,
+.profile-dither {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-dither {
+    opacity: 1;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(20, 255, 0, 0.3);
+    border: 1px dashed rgba(20, 255, 0, 0.3);
+}
+
+.profile-color {
+    opacity: 0;
+    z-index: 1;
     box-shadow: 0 0 25px rgba(20, 255, 0, 0.5);
+    border: 1px solid rgba(20, 255, 0, 0.1);
+}
+
+.profile-container:hover .profile-dither {
+    opacity: 0;
+}
+
+.profile-container:hover .profile-color {
+    opacity: 1;
 }
 
 .portrait-placeholder {
