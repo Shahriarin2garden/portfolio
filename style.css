@@ -369,9 +369,8 @@ body {
 
 .footer-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, var(--primary-color) 50%, transparent 100%);
-    margin-bottom: 2rem;
-    opacity: 0.5;
+    background: currentColor;
+    margin: 0 auto 1.5rem auto;
 }
 
 .footer-content {
@@ -380,6 +379,45 @@ body {
     color: var(--primary-color);
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.copyright,
+.version {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .portfolio-info-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .info-portrait.profile-container {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .hero-name-ascii {
+        font-size: 0.4rem;
+        /* Shrink ASCII art so it doesn't wrap off screen */
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .status-indicator {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
 }
 
 /* Responsive Overrides */
@@ -624,10 +662,37 @@ body {
 @media (max-width: 768px) {
     .portfolio-info-section {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .info-list {
+        align-items: center;
     }
 
     .hero-name-ascii {
-        font-size: 0.35rem;
-        /* Scale down for mobile */
+        font-size: 0.4rem;
+        overflow-x: auto;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .status-indicator {
+        margin-left: 0;
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+    .profile-container {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 250 / 260;
     }
 }
