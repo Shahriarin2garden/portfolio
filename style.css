@@ -399,10 +399,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-container { padding: 12px 16px; }
-  .nav-links { gap: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .nav-container { padding: 10px 12px; gap: 6px; }
+  .nav-links { display: flex; gap: 0; overflow-x: auto; flex: 1; min-width: 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; justify-content: flex-end; }
   .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { padding: 6px 10px; font-size: 0.78rem; white-space: nowrap; }
+  .nav-links a { padding: 6px 8px; font-size: 0.75rem; white-space: nowrap; flex-shrink: 0; }
   .nav-resume { display: none; }
 
   .hero { padding-top: 100px; padding-bottom: 50px; min-height: auto; }
@@ -463,8 +463,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .nav-links a { padding: 4px 8px; font-size: 0.72rem; }
-  .logo a { font-size: 1rem; }
+  .nav-container { gap: 4px; }
+  .logo a { font-size: 0.85rem; letter-spacing: -0.5px; }
+  .nav-links a { padding: 4px 5px; font-size: 0.68rem; }
 
   .hero h1 { font-size: 1.7rem; letter-spacing: -1px; }
   .hero-badge { font-size: 0.72rem; padding: 4px 10px; margin-bottom: 18px; }
