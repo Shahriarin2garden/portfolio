@@ -105,8 +105,10 @@ header {
 @keyframes orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 @keyframes scaleIn { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
 @keyframes gradientMove { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
-@keyframes wordIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
 @keyframes bounceIn { 0% { opacity: 0; transform: scale(0.9); } 60% { transform: scale(1.03); } 100% { opacity: 1; transform: scale(1); } }
+
+@keyframes blurReveal { from { opacity: 0; filter: blur(8px); transform: translateY(12px); } to { opacity: 1; filter: blur(0); transform: translateY(0); } }
 
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -157,7 +159,7 @@ header {
 
 .hero-sub .word {
   display: inline-block;
-  animation: wordIn 0.4s var(--ease-out) both;
+  animation: blurReveal 0.5s var(--ease-out) both;
 }
 
 .hero-sub .cursor {
