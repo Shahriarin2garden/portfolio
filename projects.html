@@ -1,150 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - CLIfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Md. Shahriar Hossain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="crt-overlay"></div>
-    <div class="vignette"></div>
 
-    <nav class="navbar">
-        <div class="nav-prompt">
-            <span class="prompt-arrow">&gt;.</span>
-            <a href="index.html" class="prompt-path"
-                style="color: inherit; text-decoration: none;">shahriar@portfolio:~$</a>
-            <span class="prompt-command" style="margin-left:8px;">projects</span>
-            <span class="blinking-cursor"></span>
+  <div class="blob-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo"><a href="index.html">Shahriar Hossain.</a></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title reveal"><i data-lucide="folder-git-2"></i> All Projects</h2>
+    <div class="grid-2">
+
+      <div class="card reveal reveal-delay-1">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">nano-vLLM Architectural Lab</h3>
+            <p class="card-desc">Step-by-step architectural deep-dive into vLLM internals — GPU underutilization (60-70% idle), memory fragmentation (30-50% waste), and throughput bottlenecks with enhanced visualizations.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">vLLM</span>
+            <span class="tag">ML Systems</span>
+            <span class="tag">GPU Optimization</span>
+          </div>
         </div>
-        <div class="desktop-nav" style="display:flex; gap: 1.5rem;">
-            <a href="about.html" class="nav-link">About</a>
-            <a href="projects.html" class="nav-link cyan-text">Projects</a>
-            <a href="experience.html" class="nav-link">Experience</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+        <a href="https://github.com/Shahriarin2garden/vllm_from_scratch" target="_blank" class="card-link">
+          View Repository <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+      <div class="card reveal reveal-delay-2">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">Recommender System</h3>
+            <p class="card-desc">Python-based recommendation engine implementing collaborative filtering and content-based techniques; demonstrates applied ML pipeline design, data processing, and model evaluation.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">ML Pipeline</span>
+            <span class="tag">Collaborative Filtering</span>
+          </div>
         </div>
-    </nav>
+        <a href="https://github.com/Shahriarin2garden/recommender-system" target="_blank" class="card-link">
+          View Repository <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
 
-    <main class="terminal-container">
-
-        <div class="projects-list" style="display:flex; flex-direction:column; gap:2rem;">
-
-            <section class="card">
-                <h3 class="cyan-text" style="font-size: 1.8rem; margin-bottom: 0.5rem;">nano-vLLM Architectural Lab</h3>
-                <p class="category-tags" style="margin-bottom: 1rem;"><span class="tag">Machine Learning</span> <span
-                        class="tag">Systems</span></p>
-                <p class="description" style="font-size: 1rem; margin-bottom: 1.5rem;">Step-by-step architectural
-                    deep-dive into vLLM internals — GPU underutilization (60-70% idle), memory fragmentation (30-50%
-                    waste), and throughput bottlenecks with enhanced visualizations.</p>
-
-                <p style="margin-bottom: 0.5rem; color: var(--text-color); opacity:0.8; font-size:0.9rem;">Tech Stack:
-                </p>
-                <div style="display:flex; gap: 0.8rem; flex-wrap:wrap; margin-bottom:2rem;">
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">Python</span>
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">vLLM</span>
-                </div>
-
-                <div class="action-buttons" style="margin-bottom: 0;">
-                    <a href="https://github.com/Shahriarin2garden/vllm_from_scratch" class="btn secondary-btn"
-                        target="_blank">[
-                        Github ]</a>
-                </div>
-            </section>
-
-            <section class="card">
-                <h3 class="cyan-text" style="font-size: 1.8rem; margin-bottom: 0.5rem;">Recommender System</h3>
-                <p class="category-tags" style="margin-bottom: 1rem;"><span class="tag">Machine Learning</span></p>
-                <p class="description" style="font-size: 1rem; margin-bottom: 1.5rem;">Python-based recommendation
-                    engine implementing collaborative filtering and content-based techniques; demonstrates applied ML
-                    pipeline design, data processing, and model evaluation.</p>
-
-                <p style="margin-bottom: 0.5rem; color: var(--text-color); opacity:0.8; font-size:0.9rem;">Tech Stack:
-                </p>
-                <div style="display:flex; gap: 0.8rem; flex-wrap:wrap; margin-bottom:2rem;">
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">Python</span>
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">scikit-learn</span>
-                </div>
-
-                <div class="action-buttons" style="margin-bottom: 0;">
-                    <a href="https://github.com/Shahriarin2garden/recommender-system" class="btn secondary-btn"
-                        target="_blank">[
-                        Github ]</a>
-                </div>
-            </section>
-
-            <section class="card">
-                <h3 class="cyan-text" style="font-size: 1.8rem; margin-bottom: 0.5rem;">eKYC Platform</h3>
-                <p class="category-tags" style="margin-bottom: 1rem;"><span class="tag">Full-Stack</span> <span
-                        class="tag">Computer Vision</span></p>
-                <p class="description" style="font-size: 1rem; margin-bottom: 1.5rem;">Electronic Know Your Customer
-                    (eKYC) platform with identity verification workflows — integrates computer vision concepts for
-                    document and face verification; full-stack JavaScript with REST API backend.</p>
-
-                <p style="margin-bottom: 0.5rem; color: var(--text-color); opacity:0.8; font-size:0.9rem;">Tech Stack:
-                </p>
-                <div style="display:flex; gap: 0.8rem; flex-wrap:wrap; margin-bottom:2rem;">
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">JavaScript</span>
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">Node.js</span>
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">React</span>
-                </div>
-
-                <div class="action-buttons" style="margin-bottom: 0;">
-                    <a href="https://github.com/Shahriarhossainsami499" class="btn secondary-btn" target="_blank">[
-                        Github ]</a>
-                </div>
-            </section>
-
-            <section class="card">
-                <h3 class="cyan-text" style="font-size: 1.8rem; margin-bottom: 0.5rem;">FastAPI Connection Pool MVP</h3>
-                <p class="category-tags" style="margin-bottom: 1rem;"><span class="tag">Backend</span></p>
-                <p class="description" style="font-size: 1rem; margin-bottom: 1.5rem;">High-performance Python FastAPI
-                    backend with optimized PostgreSQL connection pooling — 100% success rate under 100+ concurrent
-                    requests; clean architecture, OOP design.</p>
-
-                <p style="margin-bottom: 0.5rem; color: var(--text-color); opacity:0.8; font-size:0.9rem;">Tech Stack:
-                </p>
-                <div style="display:flex; gap: 0.8rem; flex-wrap:wrap; margin-bottom:2rem;">
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">Python</span>
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">FastAPI</span>
-                    <span
-                        style="background:rgba(209,209,209,0.1); padding:0.2rem 0.5rem; border-radius:2px; font-size:0.8rem;">PostgreSQL</span>
-                </div>
-
-                <div class="action-buttons" style="margin-bottom: 0;">
-                    <a href="https://github.com/Shahriarhossainsami499" class="btn secondary-btn" target="_blank">[
-                        Github ]</a>
-                </div>
-            </section>
-
+      <div class="card reveal reveal-delay-3">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">eKYC Platform</h3>
+            <p class="card-desc">Electronic Know Your Customer (eKYC) platform with identity verification workflows — integrates computer vision for document and face verification; full-stack JavaScript with REST API backend.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Computer Vision</span>
+          </div>
         </div>
-    </main>
+        <a href="https://github.com/Shahriarhossainsami499" target="_blank" class="card-link">
+          View Repository <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
 
-    <footer class="footer">
-        <div class="footer-divider"></div>
-        <div class="footer-content">
-            <div class="copyright">© Shahriar Hossain | 2025</div>
-            <div class="version">v20.07.2025</div>
+      <div class="card reveal reveal-delay-4">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">FastAPI Connection Pool MVP</h3>
+            <p class="card-desc">High-performance Python FastAPI backend with optimized PostgreSQL connection pooling — 100% success rate under 100+ concurrent requests; clean architecture and OOP design.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Python</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Async Architecture</span>
+          </div>
         </div>
-    </footer>
+        <a href="https://github.com/Shahriarhossainsami499" target="_blank" class="card-link">
+          View Repository <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
 
-    <script src="script.js"></script>
+    </div>
+  </section>
+
+  <footer>
+    <div>&copy; 2026 Md. Shahriar Hossain</div>
+    <div class="social-links">
+      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub">
+        <i data-lucide="github"></i>
+      </a>
+      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn">
+        <i data-lucide="linkedin"></i>
+      </a>
+      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email">
+        <i data-lucide="mail"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
-
 </html>
