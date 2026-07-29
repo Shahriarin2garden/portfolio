@@ -33,7 +33,7 @@
       <div class="hero-text">
         <div class="hero-badge"><span></span> Open to opportunities</div>
         <h1>Full-Stack Engineer<br>& AI Systems</h1>
-        <div class="hero-typing">Building production systems at the intersection of AI & scale</div>
+        <div class="hero-sub" id="hero-tagline">Building production systems at the intersection of AI & scale</div>
         <p>
           I architect high-performance backends, real-time fintech platforms, and research-backed AI pipelines. Ranked <strong style="color:var(--text);font-weight:600;">7th at ACL</strong> for NLP, currently engineering at Mudraa.
         </p>
@@ -293,6 +293,11 @@
 
   <script>
     lucide.createIcons();
+
+    const tagline = document.getElementById('hero-tagline');
+    const words = tagline.textContent.split(' ');
+    tagline.innerHTML = words.map((w, i) => `<span class="word" style="animation-delay:${0.6 + i * 0.07}s">${w}</span>`).join(' ') + '<span class="cursor"></span>';
+
     const observer = new IntersectionObserver(e => { e.forEach(e => e.isIntersecting && e.target.classList.add('visible')); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
