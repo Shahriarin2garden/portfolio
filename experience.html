@@ -12,33 +12,33 @@
 </head>
 <body>
 
-  <div class="blob-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
   <header>
     <div class="nav-container">
       <div class="logo"><a href="index.html">Shahriar Hossain.</a></div>
-      <nav>
+      <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html" class="active">Experience</a>
-        <a href="blog.html">Blog</a>
+        <a href="projects.html">Work</a>
+        <a href="experience.html" class="active">Resume</a>
+        <a href="blog.html">Research</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="nav-resume">
+        <i data-lucide="file-text" style="width:14px;height:14px;"></i> Resume
+      </a>
     </div>
   </header>
 
   <section>
-    <h2 class="section-title reveal"><i data-lucide="briefcase"></i> Work Experience</h2>
-    <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div class="section-header reveal">
+      <h2><i data-lucide="briefcase"></i> Experience</h2>
+      <span class="section-line"></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;">
 
-      <div class="experience-item reveal reveal-delay-1">
+      <div class="exp-item reveal r-1">
         <h3>Full-Stack Engineer</h3>
-        <div class="experience-meta">Mudraa &bull; Dhaka, Remote &bull; Jan 2026 &ndash; Present</div>
+        <div class="exp-meta">Mudraa &bull; Jan 2026 &ndash; Present</div>
         <ul>
           <li>Designed and implemented end-to-end web features for a financial product comparison platform building scalable frontend interfaces and backend APIs using React, Node.js, and Firestore.</li>
           <li>Integrated dynamic investment data pipelines and collaborated with product and design teams to deliver production-ready full-stack solutions.</li>
@@ -46,9 +46,9 @@
         </ul>
       </div>
 
-      <div class="experience-item reveal reveal-delay-2">
+      <div class="exp-item reveal r-2">
         <h3>Software Engineer Intern</h3>
-        <div class="experience-meta">Poridhi.io &bull; Remote &bull; May &ndash; Dec 2025</div>
+        <div class="exp-meta">Poridhi.io &bull; May &ndash; Dec 2025</div>
         <ul>
           <li>Designed scalable RESTful APIs with Node.js and implemented secure OAuth2 / OpenID Connect authentication.</li>
           <li>Worked with DevOps team on Docker and GitHub Actions CI/CD pipelines.</li>
@@ -56,9 +56,9 @@
         </ul>
       </div>
 
-      <div class="experience-item reveal reveal-delay-3">
+      <div class="exp-item reveal r-3">
         <h3>Frontend Developer</h3>
-        <div class="experience-meta">The Tork &bull; On-Site &bull; Nov 2024 &ndash; Mar 2025</div>
+        <div class="exp-meta">The Tork &bull; Nov 2024 &ndash; Mar 2025</div>
         <ul>
           <li>Developed modular, responsive UI components with React.js, Vue.js, and Next.js for a high-traffic marketplace.</li>
           <li>Sprint and code review management via Jira and Bitbucket.</li>
@@ -69,39 +69,34 @@
   </section>
 
   <section>
-    <h2 class="section-title reveal"><i data-lucide="trophy"></i> Achievements</h2>
-    <div style="display: flex; flex-direction: column; gap: 20px;">
-      <div class="achievement-card reveal reveal-delay-1">
+    <div class="section-header reveal">
+      <h2><i data-lucide="trophy"></i> Achievements</h2>
+      <span class="section-line"></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div class="achieve-card reveal r-1">
         <h4>7th Place &mdash; ACL 2025 CQs-Gen Shared Task</h4>
-        <p>ArgMining Workshop, Vienna, Austria &mdash; Team Mind_Matrix. Built an LLM pipeline to generate critical questions challenging logical fallacies in argumentative text.</p>
+        <p>ArgMining Workshop, Vienna, Austria. Team Mind_Matrix. Built an LLM pipeline to generate critical questions challenging logical fallacies in argumentative text. Published in ACL Anthology.</p>
       </div>
-      <div class="achievement-card reveal reveal-delay-2">
+      <div class="achieve-card reveal r-2">
         <h4>Ranked 21st &mdash; NAACL 2025 NLP Shared Task</h4>
-        <p>Placed in the top 25 worldwide in competitive NLP research modeling and evaluation.</p>
+        <p>Placed in the top 25 worldwide in competitive NLP research modeling and evaluation. Demonstrated expertise in transformer-based architectures and prompt engineering.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <div>&copy; 2026 Md. Shahriar Hossain</div>
-    <div class="social-links">
-      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub">
-        <i data-lucide="github"></i>
-      </a>
-      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn">
-        <i data-lucide="linkedin"></i>
-      </a>
-      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email">
-        <i data-lucide="mail"></i>
-      </a>
+    <div>&copy; 2026 Md. Shahriar Hossain &mdash; Built from scratch</div>
+    <div class="social">
+      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    const observer = new IntersectionObserver(e => { e.forEach(e => e.isIntersecting && e.target.classList.add('visible')); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>

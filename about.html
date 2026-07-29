@@ -12,33 +12,33 @@
 </head>
 <body>
 
-  <div class="blob-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
   <header>
     <div class="nav-container">
       <div class="logo"><a href="index.html">Shahriar Hossain.</a></div>
-      <nav>
+      <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="blog.html">Blog</a>
+        <a href="projects.html">Work</a>
+        <a href="experience.html">Resume</a>
+        <a href="blog.html">Research</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="nav-resume">
+        <i data-lucide="file-text" style="width:14px;height:14px;"></i> Resume
+      </a>
     </div>
   </header>
 
   <section>
-    <h2 class="section-title reveal"><i data-lucide="user"></i> About Me</h2>
+    <div class="section-header reveal">
+      <h2><i data-lucide="user"></i> About</h2>
+      <span class="section-line"></span>
+    </div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a <strong>Full-Stack Engineer & AI Systems Builder</strong> based in Dhaka, Bangladesh, currently pursuing a <strong>B.Eng. in Computer Science & Engineering</strong> at <strong>Chittagong University of Engineering & Technology (CUET)</strong>.</p>
+        <p>I'm a <strong>Full-Stack Engineer & AI Systems Builder</strong> based in Dhaka, Bangladesh, pursuing a <strong>B.Eng. in Computer Science & Engineering</strong> at <strong>Chittagong University of Engineering & Technology (CUET)</strong>.</p>
         <p>My work spans the full stack — from building high-performance backend architectures and real-time financial tools to researching AI/LLM integrations. I thrive at the intersection of production engineering and applied research.</p>
-        <p>I've placed <strong>7th worldwide at ACL 2025 CQs-Gen</strong> and <strong>21st at NAACL 2025</strong> in competitive NLP shared tasks, and I've contributed to open-source identity protocols like OIDC.</p>
+        <p>I've placed <strong>7th worldwide at ACL 2025 CQs-Gen</strong> and <strong>21st at NAACL 2025</strong> in competitive NLP shared tasks, contributed to OIDC protocols, and built distributed systems with Ray and Redis.</p>
         <div style="margin-top: 28px;">
           <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="btn btn-primary">
             <i data-lucide="download"></i> Download Resume
@@ -46,41 +46,34 @@
         </div>
       </div>
       <div>
-        <div class="about-card reveal reveal-delay-1" style="margin-bottom: 20px;">
-          <h3><i data-lucide="graduation-cap" style="width: 16px; height: 16px;"></i> Education</h3>
+        <div class="info-card reveal r-1" style="margin-bottom: 20px;">
+          <h3><i data-lucide="graduation-cap"></i> Education</h3>
           <p><strong>B.Eng. Computer Science & Engineering</strong><br>CUET &mdash; Mar 2022 &ndash; Present</p>
-          <p><strong>Front-End Development (React / Node / Vue / Angular)</strong><br>Bangladesh Computer Council &mdash; Apr 2025</p>
+          <p><strong>Front-End Development</strong><br>Bangladesh Computer Council &mdash; Apr 2025</p>
           <p><strong>Industrial Attachment</strong><br>SELISE Bangladesh Ltd. &mdash; Nov 2025</p>
         </div>
-        <div class="about-card reveal reveal-delay-2">
+        <div class="info-card reveal r-2">
           <h3><i data-lucide="award"></i> Achievements</h3>
-          <p><strong>7th Place</strong> &mdash; ACL 2025 CQs-Gen Shared Task (ArgMining Workshop)</p>
+          <p><strong>7th Place</strong> &mdash; ACL 2025 CQs-Gen Shared Task, ArgMining Workshop</p>
           <p><strong>21st Place</strong> &mdash; NAACL 2025 NLP Shared Task</p>
+          <p><strong>OIDC Contributor</strong> &mdash; Modular OpenID Connect provider</p>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <div>&copy; 2026 Md. Shahriar Hossain</div>
-    <div class="social-links">
-      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub">
-        <i data-lucide="github"></i>
-      </a>
-      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn">
-        <i data-lucide="linkedin"></i>
-      </a>
-      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email">
-        <i data-lucide="mail"></i>
-      </a>
+    <div>&copy; 2026 Md. Shahriar Hossain &mdash; Built from scratch</div>
+    <div class="social">
+      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    const observer = new IntersectionObserver(e => { e.forEach(e => e.isIntersecting && e.target.classList.add('visible')); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>

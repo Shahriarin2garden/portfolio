@@ -12,53 +12,53 @@
 </head>
 <body>
 
-  <div class="blob-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
   <header>
     <div class="nav-container">
       <div class="logo"><a href="index.html">Shahriar Hossain.</a></div>
-      <nav>
+      <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="blog.html">Blog</a>
+        <a href="projects.html">Work</a>
+        <a href="experience.html">Resume</a>
+        <a href="blog.html">Research</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
+      <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="nav-resume">
+        <i data-lucide="file-text" style="width:14px;height:14px;"></i> Resume
+      </a>
     </div>
   </header>
 
   <section class="contact-section">
-    <h2 class="section-title reveal"><i data-lucide="mail"></i> Get In Touch</h2>
-    <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 32px; line-height: 1.7;" class="reveal">
-      Looking to collaborate on exciting ML models or seeking a dedicated full-stack engineer? I bring a builder's mindset to both research and production systems. Reach out through any of the channels below!
+    <div class="section-header reveal">
+      <h2><i data-lucide="mail"></i> Contact</h2>
+      <span class="section-line"></span>
+    </div>
+    <p class="contact-intro reveal">
+      Looking to collaborate on ML models or need a full-stack engineer? I bring a builder's mindset to both research and production systems. Reach out through any channel below.
     </p>
 
-    <div class="contact-item reveal reveal-delay-1">
+    <div class="contact-item reveal r-1">
       <i data-lucide="mail"></i>
       <a href="mailto:Shahriarhossainsami499@gmail.com">Shahriarhossainsami499@gmail.com</a>
     </div>
 
-    <div class="contact-item reveal reveal-delay-2">
+    <div class="contact-item reveal r-2">
       <i data-lucide="phone"></i>
       <a href="tel:+8801521743550">+880 1521-743550</a>
     </div>
 
-    <div class="contact-item reveal reveal-delay-3">
+    <div class="contact-item reveal r-3">
       <i data-lucide="github"></i>
-      <a href="https://github.com/Shahriarhossainsami499" target="_blank">github.com/Shahriarhossainsami499</a>
+      <a href="https://github.com/Shahriarin2garden" target="_blank">github.com/Shahriarin2garden</a>
     </div>
 
-    <div class="contact-item reveal reveal-delay-4">
+    <div class="contact-item reveal r-4">
       <i data-lucide="linkedin"></i>
       <a href="https://linkedin.com/in/shahriarhossain" target="_blank">linkedin.com/in/shahriarhossain</a>
     </div>
 
-    <form class="contact-form reveal">
+    <form class="form-wrap reveal">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your name">
@@ -71,32 +71,24 @@
         <label for="message">Message</label>
         <textarea id="message" rows="5" placeholder="Your message"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+      <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
         <i data-lucide="send"></i> Send Message
       </button>
     </form>
   </section>
 
   <footer>
-    <div>&copy; 2026 Md. Shahriar Hossain</div>
-    <div class="social-links">
-      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub">
-        <i data-lucide="github"></i>
-      </a>
-      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn">
-        <i data-lucide="linkedin"></i>
-      </a>
-      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email">
-        <i data-lucide="mail"></i>
-      </a>
+    <div>&copy; 2026 Md. Shahriar Hossain &mdash; Built from scratch</div>
+    <div class="social">
+      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    const observer = new IntersectionObserver(e => { e.forEach(e => e.isIntersecting && e.target.classList.add('visible')); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>

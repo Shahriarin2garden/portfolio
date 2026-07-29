@@ -12,129 +12,128 @@
 </head>
 <body>
 
-  <div class="blob-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
   <header>
     <div class="nav-container">
       <div class="logo"><a href="index.html">Shahriar Hossain.</a></div>
-      <nav>
+      <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="blog.html">Blog</a>
+        <a href="projects.html">Work</a>
+        <a href="experience.html">Resume</a>
+        <a href="blog.html">Research</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="nav-resume">
+        <i data-lucide="file-text" style="width:14px;height:14px;"></i> Resume
+      </a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span></span> Open to Opportunities & Collaborations
-        </div>
-        <h1>Full-Stack Engineer<br>& AI Systems Builder</h1>
-        <div class="hero-typing-wrapper">
-          <span class="hero-typing">Building production systems at the intersection of AI & scale</span>
-        </div>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge"><span></span> Open to opportunities</div>
+        <h1>Full-Stack Engineer<br>& AI Systems</h1>
+        <div class="hero-typing">Building production systems at the intersection of AI & scale</div>
         <p>
-          I design high-performance backend architectures, real-time financial tools, and research-backed AI/LLM integrations. 7th at ACL CQs-Gen, full-stack engineer at Mudraa.
+          I architect high-performance backends, real-time fintech platforms, and research-backed AI pipelines. Ranked <strong style="color:var(--text);font-weight:600;">7th at ACL</strong> for NLP, currently engineering at Mudraa.
         </p>
-        <div class="hero-buttons">
+        <div class="hero-actions">
           <a href="https://github.com/Shahriarin2garden" target="_blank" class="btn btn-primary">
-            <i data-lucide="github"></i> Explore GitHub
+            <i data-lucide="github"></i> GitHub
           </a>
-          <a href="contact.html" class="btn btn-secondary">
-            <i data-lucide="mail"></i> Get In Touch
+          <a href="projects.html" class="btn btn-ghost">
+            <i data-lucide="folder-git-2"></i> View Work
           </a>
-          <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="btn btn-secondary">
-            <i data-lucide="file-text"></i> Resume
+          <a href="contact.html" class="btn btn-ghost">
+            <i data-lucide="mail"></i> Contact
           </a>
         </div>
       </div>
       <div class="hero-visual">
-        <div class="portrait-frame">
-          <div class="portrait-ring"></div>
-          <div class="portrait-ring-2"></div>
-          <div class="portrait-dot portrait-dot-1"></div>
-          <div class="portrait-dot portrait-dot-2"></div>
-          <div class="portrait-dot portrait-dot-3"></div>
-          <img src="profile.jpg" alt="Md. Shahriar Hossain">
+        <div class="portrait-system">
+          <div class="portrait-orbit"><span class="orbit-dot"></span><span class="orbit-dot"></span></div>
+          <div class="portrait-orbit-2"><span class="orbit-dot"></span><span class="orbit-dot"></span></div>
+          <div class="portrait-orbit-3"><span class="orbit-dot"></span></div>
+          <div class="portrait-frame">
+            <img src="profile.jpg" alt="Md. Shahriar Hossain">
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="stats-bar reveal">
-      <div class="stat-item">
-        <div class="stat-number">3+</div>
-        <div class="stat-label">Years Building</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">10+</div>
-        <div class="stat-label">Projects Shipped</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">2</div>
-        <div class="stat-label">Research Papers</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">Top 7</div>
-        <div class="stat-label">ACL ArgMining</div>
       </div>
     </div>
   </section>
 
+  <div class="stats-row reveal">
+    <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Years Building</div></div>
+    <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Projects</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Research Papers</div></div>
+    <div class="stat"><div class="stat-num">7th</div><div class="stat-label">ACL ArgMining</div></div>
+  </div>
+
   <section id="projects">
-    <h2 class="section-title reveal"><i data-lucide="folder-git-2"></i> Featured Projects</h2>
+    <div class="section-header reveal">
+      <h2><i data-lucide="folder-git-2"></i> Featured Work</h2>
+      <span class="section-line"></span>
+    </div>
     <div class="grid-2">
 
-      <div class="card reveal reveal-delay-1">
+      <div class="card reveal r-1">
         <div>
-          <div class="card-header">
-            <h3 class="card-title">nano-vLLM Architectural Lab</h3>
-            <p class="card-desc">Step-by-step deep-dive into vLLM internals — GPU underutilization, memory fragmentation, and throughput bottlenecks with enhanced visualizations.</p>
-          </div>
+          <div class="card-icon"><i data-lucide="hard-drive"></i></div>
+          <h3>Distributed File Processor</h3>
+          <p class="card-desc">Production-ready distributed CSV/JSON processing engine using Ray, FastAPI, and Redis. Parallel chunk processing with fault tolerance and real-time progress tracking via WebSocket.</p>
           <div class="tags">
             <span class="tag">Python</span>
-            <span class="tag">ML Systems</span>
+            <span class="tag">Ray</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Redis</span>
+            <span class="tag">WebSocket</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/distributed-file-processor" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card reveal r-2">
+        <div>
+          <div class="card-icon"><i data-lucide="microchip"></i></div>
+          <h3>nano-vLLM Architectural Lab</h3>
+          <p class="card-desc">Step-by-step deep-dive into vLLM internals exploring GPU underutilization (60-70% idle), memory fragmentation (30-50% waste), and throughput bottlenecks with visual profiler.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
             <span class="tag">vLLM</span>
             <span class="tag">GPU Optimization</span>
+            <span class="tag">ML Systems</span>
           </div>
         </div>
-        <a href="https://github.com/Shahriarin2garden/vllm_from_scratch" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/vllm_from_scratch" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
       </div>
 
-      <div class="card reveal reveal-delay-2">
+      <div class="card reveal r-3">
         <div>
-          <div class="card-header">
-            <h3 class="card-title">FastAPI Connection Pool MVP</h3>
-            <p class="card-desc">High-performance Python FastAPI backend with optimized PostgreSQL connection pooling — 100% success rate under 100+ concurrent requests.</p>
-          </div>
+          <div class="card-icon"><i data-lucide="shopping-bag"></i></div>
+          <h3>JerseyHub Marketplace</h3>
+          <p class="card-desc">Local business jersey marketplace built with Next.js 15, Prisma ORM, Neon PostgreSQL, and Tailwind CSS. Full-featured e-commerce with auth, product management, and checkout.</p>
           <div class="tags">
-            <span class="tag">FastAPI</span>
-            <span class="tag">Python</span>
+            <span class="tag">Next.js 15</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Prisma</span>
             <span class="tag">PostgreSQL</span>
-            <span class="tag">Async Architecture</span>
+            <span class="tag">Tailwind</span>
           </div>
         </div>
-        <a href="https://github.com/Shahriarhossainsami499" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/jersyhub" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
       </div>
 
-      <div class="card reveal reveal-delay-3">
+      <div class="card reveal r-4">
         <div>
-          <div class="card-header">
-            <h3 class="card-title">eKYC Platform</h3>
-            <p class="card-desc">Electronic Know Your Customer platform with identity verification workflows — integrates computer vision for document and face verification.</p>
-          </div>
+          <div class="card-icon"><i data-lucide="scan-face"></i></div>
+          <h3>eKYC Platform</h3>
+          <p class="card-desc">Electronic Know Your Customer platform with identity verification workflows. Integrates computer vision for document and face verification with a full-stack JavaScript REST API.</p>
           <div class="tags">
             <span class="tag">JavaScript</span>
             <span class="tag">Node.js</span>
@@ -142,74 +141,65 @@
             <span class="tag">Computer Vision</span>
           </div>
         </div>
-        <a href="https://github.com/Shahriarhossainsami499" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
-      </div>
-
-      <div class="card reveal reveal-delay-4">
-        <div>
-          <div class="card-header">
-            <h3 class="card-title">Recommender System</h3>
-            <p class="card-desc">Python-based recommendation engine implementing collaborative filtering and content-based techniques with applied ML pipeline design and model evaluation.</p>
-          </div>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">scikit-learn</span>
-            <span class="tag">ML Pipeline</span>
-            <span class="tag">Collaborative Filtering</span>
-          </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/EKYC-Platform2" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://ekyc-two.vercel.app" target="_blank" class="card-link card-link-dim"><i data-lucide="external-link"></i> Live</a>
         </div>
-        <a href="https://github.com/Shahriarin2garden/recommender-system" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
       </div>
 
     </div>
-    <div style="text-align: center; margin-top: 40px;" class="reveal">
-      <a href="projects.html" class="btn btn-secondary">View All Projects <i data-lucide="arrow-right"></i></a>
+    <div style="text-align:center;margin-top:40px;" class="reveal">
+      <a href="projects.html" class="btn btn-ghost">View all projects <i data-lucide="arrow-right"></i></a>
     </div>
   </section>
 
   <section id="skills">
-    <h2 class="section-title reveal"><i data-lucide="cpu"></i> Technical Capabilities</h2>
+    <div class="section-header reveal">
+      <h2><i data-lucide="cpu"></i> Stack</h2>
+      <span class="section-line"></span>
+    </div>
     <div class="grid-3">
 
-      <div class="skills-category reveal reveal-delay-1">
-        <h3><i data-lucide="code-2" style="width: 16px; height: 16px;"></i> Languages & Frameworks</h3>
-        <div class="skill-pills">
-          <span class="skill-pill">TypeScript</span>
-          <span class="skill-pill">JavaScript (ES6+)</span>
-          <span class="skill-pill">Python</span>
-          <span class="skill-pill">C++</span>
-          <span class="skill-pill">React / Next.js</span>
-          <span class="skill-pill">Node.js / Express</span>
-          <span class="skill-pill">FastAPI / Flask</span>
-          <span class="skill-pill">Vue.js</span>
+      <div class="skill-group reveal r-1">
+        <h3><i data-lucide="code-2"></i> Languages & Frameworks</h3>
+        <div class="pills">
+          <span class="pill">TypeScript</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Python</span>
+          <span class="pill">C++</span>
+          <span class="pill">React / Next.js</span>
+          <span class="pill">Node.js / Express</span>
+          <span class="pill">FastAPI / Flask</span>
+          <span class="pill">Vue.js</span>
+          <span class="pill">Go</span>
         </div>
       </div>
 
-      <div class="skills-category reveal reveal-delay-2">
-        <h3><i data-lucide="database" style="width: 16px; height: 16px;"></i> Databases & Infrastructure</h3>
-        <div class="skill-pills">
-          <span class="skill-pill">PostgreSQL</span>
-          <span class="skill-pill">Prisma ORM</span>
-          <span class="skill-pill">Firebase / Firestore</span>
-          <span class="skill-pill">Docker</span>
-          <span class="skill-pill">AWS</span>
-          <span class="skill-pill">GitHub Actions</span>
+      <div class="skill-group reveal r-2">
+        <h3><i data-lucide="database"></i> Data & Infrastructure</h3>
+        <div class="pills">
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Prisma ORM</span>
+          <span class="pill">Firebase / Firestore</span>
+          <span class="pill">Redis</span>
+          <span class="pill">Docker</span>
+          <span class="pill">AWS</span>
+          <span class="pill">Neon</span>
+          <span class="pill">GitHub Actions</span>
         </div>
       </div>
 
-      <div class="skills-category reveal reveal-delay-3">
-        <h3><i data-lucide="brain" style="width: 16px; height: 16px;"></i> AI & Research</h3>
-        <div class="skill-pills">
-          <span class="skill-pill">RAG Architectures</span>
-          <span class="skill-pill">OpenAI / Anthropic APIs</span>
-          <span class="skill-pill">Hugging Face</span>
-          <span class="skill-pill">DistilBERT / LSTM</span>
-          <span class="skill-pill">LiteLLM</span>
-          <span class="skill-pill">vLLM</span>
+      <div class="skill-group reveal r-3">
+        <h3><i data-lucide="brain"></i> AI & Systems</h3>
+        <div class="pills">
+          <span class="pill">RAG Architectures</span>
+          <span class="pill">OpenAI / Anthropic APIs</span>
+          <span class="pill">Hugging Face</span>
+          <span class="pill">DistilBERT / LSTM</span>
+          <span class="pill">LiteLLM</span>
+          <span class="pill">vLLM</span>
+          <span class="pill">Ray</span>
+          <span class="pill">OAuth2 / OIDC</span>
         </div>
       </div>
 
@@ -217,12 +207,15 @@
   </section>
 
   <section id="experience">
-    <h2 class="section-title reveal"><i data-lucide="briefcase"></i> Experience</h2>
-    <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div class="section-header reveal">
+      <h2><i data-lucide="briefcase"></i> Experience</h2>
+      <span class="section-line"></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;">
 
-      <div class="experience-item reveal reveal-delay-1">
+      <div class="exp-item reveal r-1">
         <h3>Full-Stack Engineer</h3>
-        <div class="experience-meta">Mudraa &bull; Jan 2026 &ndash; Present</div>
+        <div class="exp-meta">Mudraa &bull; Jan 2026 &ndash; Present</div>
         <ul>
           <li>Built end-to-end web features for financial product comparison platform using React, Node.js, and Firestore.</li>
           <li>Integrated dynamic investment data pipelines and delivered production-ready full-stack solutions.</li>
@@ -230,9 +223,9 @@
         </ul>
       </div>
 
-      <div class="experience-item reveal reveal-delay-2">
+      <div class="exp-item reveal r-2">
         <h3>Software Engineer Intern</h3>
-        <div class="experience-meta">Poridhi.io &bull; May &ndash; Dec 2025</div>
+        <div class="exp-meta">Poridhi.io &bull; May &ndash; Dec 2025</div>
         <ul>
           <li>Designed scalable RESTful APIs with Node.js and implemented secure OAuth2 / OpenID Connect authentication.</li>
           <li>Worked with DevOps on Docker and GitHub Actions CI/CD pipelines.</li>
@@ -240,9 +233,9 @@
         </ul>
       </div>
 
-      <div class="experience-item reveal reveal-delay-3">
+      <div class="exp-item reveal r-3">
         <h3>Frontend Developer</h3>
-        <div class="experience-meta">The Tork &bull; Nov 2024 &ndash; Mar 2025</div>
+        <div class="exp-meta">The Tork &bull; Nov 2024 &ndash; Mar 2025</div>
         <ul>
           <li>Developed modular, responsive UI components with React.js, Vue.js, and Next.js for a high-traffic marketplace.</li>
           <li>Managed sprints and code reviews via Jira and Bitbucket.</li>
@@ -250,38 +243,20 @@
       </div>
 
     </div>
-    <div style="text-align: center; margin-top: 40px;" class="reveal">
-      <a href="experience.html" class="btn btn-secondary">View Achievements <i data-lucide="arrow-right"></i></a>
-    </div>
   </section>
 
   <footer>
-    <div>&copy; 2026 Md. Shahriar Hossain</div>
-    <div class="social-links">
-      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub">
-        <i data-lucide="github"></i>
-      </a>
-      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn">
-        <i data-lucide="linkedin"></i>
-      </a>
-      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email">
-        <i data-lucide="mail"></i>
-      </a>
+    <div>&copy; 2026 Md. Shahriar Hossain &mdash; Built from scratch</div>
+    <div class="social">
+      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
-
-    // Intersection Observer for scroll-triggered reveals
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
+    const observer = new IntersectionObserver(e => { e.forEach(e => e.isIntersecting && e.target.classList.add('visible')); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>

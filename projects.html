@@ -12,54 +12,144 @@
 </head>
 <body>
 
-  <div class="blob-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
   <header>
     <div class="nav-container">
       <div class="logo"><a href="index.html">Shahriar Hossain.</a></div>
-      <nav>
+      <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="blog.html">Blog</a>
+        <a href="projects.html" class="active">Work</a>
+        <a href="experience.html">Resume</a>
+        <a href="blog.html">Research</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="nav-resume">
+        <i data-lucide="file-text" style="width:14px;height:14px;"></i> Resume
+      </a>
     </div>
   </header>
 
   <section>
-    <h2 class="section-title reveal"><i data-lucide="folder-git-2"></i> All Projects</h2>
+    <div class="section-header reveal">
+      <h2><i data-lucide="folder-git-2"></i> All Projects</h2>
+      <span class="section-line"></span>
+    </div>
     <div class="grid-2">
 
-      <div class="card reveal reveal-delay-1">
+      <div class="card reveal r-1">
         <div>
-          <div class="card-header">
-            <h3 class="card-title">nano-vLLM Architectural Lab</h3>
-            <p class="card-desc">Step-by-step architectural deep-dive into vLLM internals — GPU underutilization (60-70% idle), memory fragmentation (30-50% waste), and throughput bottlenecks with enhanced visualizations.</p>
+          <div class="card-icon"><i data-lucide="hard-drive"></i></div>
+          <h3>Distributed File Processor</h3>
+          <p class="card-desc">Production-ready distributed CSV/JSON processing engine using Ray, FastAPI, and Redis. Parallel chunk processing with fault tolerance and real-time progress tracking via WebSocket.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Ray</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Redis</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">Docker</span>
           </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/distributed-file-processor" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card reveal r-2">
+        <div>
+          <div class="card-icon"><i data-lucide="microchip"></i></div>
+          <h3>nano-vLLM Architectural Lab</h3>
+          <p class="card-desc">Step-by-step deep-dive into vLLM internals — GPU underutilization (60-70% idle), memory fragmentation (30-50% waste), and throughput bottlenecks with visual profiler. <strong style="color:var(--text)">&starf; 1</strong></p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">vLLM</span>
-            <span class="tag">ML Systems</span>
             <span class="tag">GPU Optimization</span>
+            <span class="tag">ML Systems</span>
           </div>
         </div>
-        <a href="https://github.com/Shahriarin2garden/vllm_from_scratch" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/vllm_from_scratch" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
       </div>
 
-      <div class="card reveal reveal-delay-2">
+      <div class="card reveal r-3">
         <div>
-          <div class="card-header">
-            <h3 class="card-title">Recommender System</h3>
-            <p class="card-desc">Python-based recommendation engine implementing collaborative filtering and content-based techniques; demonstrates applied ML pipeline design, data processing, and model evaluation.</p>
+          <div class="card-icon"><i data-lucide="shopping-bag"></i></div>
+          <h3>JerseyHub Marketplace</h3>
+          <p class="card-desc">Local business jersey marketplace with Next.js 15, Prisma ORM, Neon PostgreSQL, and Tailwind CSS. Full-featured e-commerce with authentication, product management, and checkout flow.</p>
+          <div class="tags">
+            <span class="tag">Next.js 15</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Prisma</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Neon</span>
+            <span class="tag">Tailwind</span>
           </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/jersyhub" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card reveal r-4">
+        <div>
+          <div class="card-icon"><i data-lucide="scan-face"></i></div>
+          <h3>eKYC Platform</h3>
+          <p class="card-desc">Electronic Know Your Customer platform with identity verification workflows. Integrates computer vision for document and face verification. Full-stack JavaScript with REST API backend.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">REST API</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/EKYC-Platform2" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://ekyc-two.vercel.app" target="_blank" class="card-link card-link-dim"><i data-lucide="external-link"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="card reveal r-1">
+        <div>
+          <div class="card-icon"><i data-lucide="zap"></i></div>
+          <h3>FastAPI Connection Pool MVP</h3>
+          <p class="card-desc">High-performance Python FastAPI backend with optimized PostgreSQL connection pooling. 100% success rate under 100+ concurrent requests with clean architecture and OOP design.</p>
+          <div class="tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Python</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Async</span>
+            <span class="tag">OOP</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/fastapi-pool-mvp" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card reveal r-2">
+        <div>
+          <div class="card-icon"><i data-lucide="kanban"></i></div>
+          <h3>SammTech Kanban API</h3>
+          <p class="card-desc">TypeScript-based Kanban board API with full CRUD operations, user authentication, and project management features. Built with Express and PostgreSQL.</p>
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">REST API</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/sammtech-kanban-api" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card reveal r-3">
+        <div>
+          <div class="card-icon"><i data-lucide="list-checks"></i></div>
+          <h3>Recommender System</h3>
+          <p class="card-desc">Recommendation engine implementing collaborative filtering and content-based techniques. Demonstrates applied ML pipeline design, data processing, and model evaluation.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">scikit-learn</span>
@@ -67,70 +157,43 @@
             <span class="tag">Collaborative Filtering</span>
           </div>
         </div>
-        <a href="https://github.com/Shahriarin2garden/recommender-system" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/recommender-system" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
+        </div>
       </div>
 
-      <div class="card reveal reveal-delay-3">
+      <div class="card reveal r-4">
         <div>
-          <div class="card-header">
-            <h3 class="card-title">eKYC Platform</h3>
-            <p class="card-desc">Electronic Know Your Customer (eKYC) platform with identity verification workflows — integrates computer vision for document and face verification; full-stack JavaScript with REST API backend.</p>
-          </div>
+          <div class="card-icon"><i data-lucide="robot"></i></div>
+          <h3>AI Agent Builder</h3>
+          <p class="card-desc">TypeScript-based AI Agent Builder interface tackling performance optimization, logical bug fixes, and state management patterns for a partially built agent configuration UI.</p>
           <div class="tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">React</span>
-            <span class="tag">Computer Vision</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">AI</span>
+            <span class="tag">State Management</span>
+            <span class="tag">Performance</span>
           </div>
         </div>
-        <a href="https://github.com/Shahriarhossainsami499" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
-      </div>
-
-      <div class="card reveal reveal-delay-4">
-        <div>
-          <div class="card-header">
-            <h3 class="card-title">FastAPI Connection Pool MVP</h3>
-            <p class="card-desc">High-performance Python FastAPI backend with optimized PostgreSQL connection pooling — 100% success rate under 100+ concurrent requests; clean architecture and OOP design.</p>
-          </div>
-          <div class="tags">
-            <span class="tag">FastAPI</span>
-            <span class="tag">Python</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Async Architecture</span>
-          </div>
+        <div class="card-footer">
+          <a href="https://github.com/Shahriarin2garden/ai-agent-builder" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
         </div>
-        <a href="https://github.com/Shahriarhossainsami499" target="_blank" class="card-link">
-          View Repository <i data-lucide="arrow-up-right"></i>
-        </a>
       </div>
 
     </div>
   </section>
 
   <footer>
-    <div>&copy; 2026 Md. Shahriar Hossain</div>
-    <div class="social-links">
-      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub">
-        <i data-lucide="github"></i>
-      </a>
-      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn">
-        <i data-lucide="linkedin"></i>
-      </a>
-      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email">
-        <i data-lucide="mail"></i>
-      </a>
+    <div>&copy; 2026 Md. Shahriar Hossain &mdash; Built from scratch</div>
+    <div class="social">
+      <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://linkedin.com/in/shahriarhossain" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="mailto:Shahriarhossainsami499@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    const observer = new IntersectionObserver(e => { e.forEach(e => e.isIntersecting && e.target.classList.add('visible')); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
