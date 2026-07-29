@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <div class="nav-container">
-      <div class="logo"><a href="index.html">Shahriar Hossain.</a></div>
+      <div class="logo"><a href="index.html">Shahriar<span>.</span></a></div>
       <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="projects.html">Work</a>
@@ -23,39 +23,40 @@
         <a href="contact.html">Contact</a>
       </nav>
       <a href="Shahriar_Hossain_Resume (2).pdf" target="_blank" class="nav-resume">
-        <i data-lucide="file-text" style="width:14px;height:14px;"></i> Resume
+        <i data-lucide="file-text" style="width:13px;height:13px;"></i> Resume
       </a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <div class="hero-badge"><span></span> Open to opportunities</div>
-        <h1>Full-Stack Engineer<br>& AI Systems</h1>
-        <div class="hero-sub" id="hero-tagline">Building production systems at the intersection of AI & scale</div>
-        <p>
-          I architect LLM-powered systems, real-time fintech platforms, and research-backed AI pipelines — specializing in RAG, hallucination mitigation, and production AI integrations across Anthropic, OpenAI, and Gemini. Ranked <strong style="color:var(--text);font-weight:600;">7th at ACL</strong> ArgMining, currently shipping LLM features at Mudraa.
-        </p>
-        <div class="hero-actions">
-          <a href="https://github.com/Shahriarin2garden" target="_blank" class="btn btn-primary">
-            <i data-lucide="github"></i> GitHub
-          </a>
-          <a href="projects.html" class="btn btn-ghost">
-            <i data-lucide="folder-git-2"></i> View Work
-          </a>
-          <a href="contact.html" class="btn btn-ghost">
-            <i data-lucide="mail"></i> Contact
-          </a>
+    <div class="hero-inner">
+      <div class="hero-tag"><span></span> Open to opportunities</div>
+      <div class="hero-row">
+        <div>
+          <h1>Full-Stack Engineer<br><span class="highlight">& AI Systems</span></h1>
+          <p>
+            Architecting LLM-powered systems, real-time fintech platforms, and research-backed AI pipelines. Specializing in RAG, hallucination mitigation, and production AI across Anthropic, OpenAI, and Gemini.
+          </p>
+          <div class="hero-actions">
+            <a href="https://github.com/Shahriarin2garden" target="_blank" class="btn btn-primary">
+              <i data-lucide="github"></i> GitHub
+            </a>
+            <a href="projects.html" class="btn btn-ghost">
+              <i data-lucide="folder-git-2"></i> View Work
+            </a>
+            <a href="contact.html" class="btn btn-ghost">
+              <i data-lucide="mail"></i> Contact
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div class="portrait-system">
-          <div class="portrait-orbit"><span class="orbit-dot"></span><span class="orbit-dot"></span></div>
-          <div class="portrait-orbit-2"><span class="orbit-dot"></span><span class="orbit-dot"></span></div>
-          <div class="portrait-orbit-3"><span class="orbit-dot"></span></div>
-          <div class="portrait-frame">
-            <img src="shahriar.png" alt="Md. Shahriar Hossain">
+        <div class="hero-visual">
+          <div class="portrait-system">
+            <div class="portrait-glow"></div>
+            <div class="portrait-ring"></div>
+            <div class="portrait-ring-2"></div>
+            <div class="portrait-frame">
+              <img src="shahriar.png" alt="Md. Shahriar Hossain">
+            </div>
           </div>
         </div>
       </div>
@@ -63,11 +64,39 @@
   </section>
 
   <div class="stats-row reveal">
-    <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Years Building</div></div>
-    <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Projects</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Research Papers</div></div>
-    <div class="stat"><div class="stat-num">7th</div><div class="stat-label">ACL ArgMining</div></div>
+    <div class="stat"><div class="stat-num" data-target="3">0</div><div class="stat-label">Years Building</div></div>
+    <div class="stat"><div class="stat-num" data-target="15">0</div><div class="stat-label">Projects</div></div>
+    <div class="stat"><div class="stat-num" data-target="2">0</div><div class="stat-label">Research Papers</div></div>
+    <div class="stat"><div class="stat-num" data-target="7">0</div><div class="stat-label">ACL ArgMining</div></div>
   </div>
+
+  <section id="services">
+    <div class="section-header reveal">
+      <h2><i data-lucide="sparkles"></i> What I Build</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="grid-3">
+
+      <div class="service-card reveal r-1">
+        <div class="service-icon"><i data-lucide="code-2"></i></div>
+        <h3>Full-Stack Platforms</h3>
+        <p>End-to-end web applications with React, Node.js, and PostgreSQL. Real-time fintech dashboards, e-commerce marketplaces, and authentication services with OIDC/OAuth2.</p>
+      </div>
+
+      <div class="service-card reveal r-2">
+        <div class="service-icon"><i data-lucide="brain"></i></div>
+        <h3>AI & LLM Systems</h3>
+        <p>RAG pipelines, hallucination mitigation, LLM watermarking. Production integrations with Anthropic, OpenAI, Gemini. Custom agent architectures with prompt engineering.</p>
+      </div>
+
+      <div class="service-card reveal r-3">
+        <div class="service-icon"><i data-lucide="flask-conical"></i></div>
+        <h3>Research & Prototyping</h3>
+        <p>NLP research (ACL, NAACL), explainable AI (SHAP/LIME), distributed systems with Ray. From paper to prototype to production — bridging research and engineering.</p>
+      </div>
+
+    </div>
+  </section>
 
   <section id="projects">
     <div class="section-header reveal">
@@ -143,7 +172,7 @@
         </div>
         <div class="card-footer">
           <a href="https://github.com/Shahriarin2garden/EKYC-Platform2" target="_blank" class="card-link">Repository <i data-lucide="arrow-up-right"></i></a>
-          <a href="https://ekyc-two.vercel.app" target="_blank" class="card-link card-link-dim"><i data-lucide="external-link"></i> Live</a>
+          <a href="https://ekyc-two.vercel.app" target="_blank" class="card-link"><i data-lucide="external-link"></i> Live</a>
         </div>
       </div>
 
@@ -185,7 +214,7 @@
       </div>
 
     </div>
-    <div style="text-align:center;margin-top:40px;" class="reveal">
+    <div style="text-align:center;margin-top:36px;" class="reveal">
       <a href="projects.html" class="btn btn-ghost">View all projects <i data-lucide="arrow-right"></i></a>
     </div>
   </section>
@@ -248,7 +277,7 @@
       <h2><i data-lucide="briefcase"></i> Experience</h2>
       <span class="section-line"></span>
     </div>
-    <div style="display:flex;flex-direction:column;gap:20px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
 
       <div class="exp-item reveal r-1">
         <h3>Full-Stack Engineer</h3>
@@ -285,7 +314,7 @@
       <h2><i data-lucide="graduation-cap"></i> Education</h2>
       <span class="section-line"></span>
     </div>
-    <div style="display:flex;flex-direction:column;gap:20px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
       <div class="exp-item reveal r-1">
         <h3>B.Eng. in Computer Science & Engineering</h3>
         <div class="exp-meta">Chittagong University of Engineering & Technology (CUET) &bull; Mar 2022 &ndash; May 2026</div>
@@ -306,8 +335,36 @@
     </div>
   </section>
 
+  <section id="now">
+    <div class="section-header reveal">
+      <h2><i data-lucide="activity"></i> Currently</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="grid-3">
+
+      <div class="service-card reveal r-1">
+        <div class="service-icon"><i data-lucide="flask-conical"></i></div>
+        <h3>CertiMark-RAG Thesis</h3>
+        <p>Finishing B.Sc. thesis on hybrid-uncertainty watermarking for RAG — 34-feature ensemble detector, TPR 0.99 @ 0 FPR across GPT-2, Qwen-2.5, DeepSeek.</p>
+      </div>
+
+      <div class="service-card reveal r-2">
+        <div class="service-icon"><i data-lucide="trending-up"></i></div>
+        <h3>LLM Features at Mudraa</h3>
+        <p>Shipping share price prediction with Anthropic/OpenAI APIs. Focus on hallucination reduction, prompt engineering, and production reliability.</p>
+      </div>
+
+      <div class="service-card reveal r-3">
+        <div class="service-icon"><i data-lucide="book-open"></i></div>
+        <h3>Exploring AI Infrastructure</h3>
+        <p>Deep-diving into vLLM internals, GPU optimization, and distributed inference. Building towards production-grade LLM serving.</p>
+      </div>
+
+    </div>
+  </section>
+
   <footer>
-    <div>&copy; 2026 Md. Shahriar Hossain &mdash; Built from scratch</div>
+    <div>&copy; 2026 Md. Shahriar Hossain</div>
     <div class="social">
       <a href="https://github.com/Shahriarin2garden" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
       <a href="https://linkedin.com/in/shahriar-hossain499/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
@@ -318,12 +375,33 @@
   <script>
     lucide.createIcons();
 
-    const tagline = document.getElementById('hero-tagline');
-    const words = tagline.textContent.split(' ');
-    tagline.innerHTML = words.map((w, i) => `<span class="word" style="animation-delay:${0.6 + i * 0.07}s">${w}</span>`).join(' ') + '<span class="cursor"></span>';
-
-    const observer = new IntersectionObserver(e => { e.forEach(e => e.isIntersecting && e.target.classList.add('visible')); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    const observer = new IntersectionObserver(e => {
+      e.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const stats = document.querySelectorAll('.stat-num[data-target]');
+    const statObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.target);
+          let current = 0;
+          const step = Math.ceil(target / 30);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = current + (target >= 7 ? '' : '+');
+          }, 40);
+          statObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    stats.forEach(el => statObserver.observe(el));
   </script>
 </body>
 </html>
