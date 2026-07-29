@@ -108,7 +108,7 @@ header {
 
 /* === HERO === */
 .hero {
-  min-height: 100vh; display: flex; align-items: center;
+  min-height: 100dvh; display: flex; align-items: center;
   padding: 140px 24px 80px; position: relative; z-index: 1;
   max-width: 1200px; margin: 0 auto;
 }
@@ -407,7 +407,7 @@ footer {
 
   .hero { padding-top: 100px; padding-bottom: 50px; min-height: auto; }
   .hero h1 { font-size: 2.2rem; letter-spacing: -1.5px; }
-  .hero-typing { font-size: 0.9rem; white-space: normal; overflow: visible; border-right: none; animation: none; max-width: 100%; }
+  .hero-typing { font-size: 0.9rem; white-space: normal; overflow: visible; border-right: none; animation: none; max-width: 100%; word-break: break-word; }
   .hero p { font-size: 0.95rem; }
   .btn { padding: 10px 20px; font-size: 0.85rem; }
 
